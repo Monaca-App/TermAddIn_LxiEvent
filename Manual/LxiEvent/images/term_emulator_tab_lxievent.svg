@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="510" viewBox="0 0 880 510">
+  <defs>
+    <filter id="cardShadow" x="-2%" y="-2%" width="104%" height="106%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0F172A" flood-opacity="0.14" />
+    </filter>
+    <style>
+      .ui { font-family: 'Yu Gothic UI', 'Meiryo UI', 'Segoe UI', sans-serif; }
+      .mono { font-family: 'Consolas', 'BIZ UDGothic', 'MS Gothic', monospace; }
+      .lbl { font-family: 'Yu Gothic UI', 'Meiryo UI', sans-serif; font-size: 11px; font-weight: 700; fill: #1E293B; }
+      .sub { font-family: 'Yu Gothic UI', 'Meiryo UI', sans-serif; font-size: 10.5px; fill: #475569; }
+      .inp { fill: #FFFFFF; stroke: #94A3B8; stroke-width: 1.2; rx: 3; }
+      .grp { fill: #FFFFFF; stroke: #CBD5E1; stroke-width: 1.1; rx: 5; }
+      .grp-hdr { font-family: 'Yu Gothic UI', 'Meiryo UI', sans-serif; font-size: 11.5px; font-weight: 700; fill: #1E3A8A; }
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="880" height="510" fill="#F8FAFC" rx="10" />
+  <text x="24" y="25" class="ui" font-size="13.5" font-weight="700" fill="#0F172A">[LXI Event] LAN Event &amp; Event Logs 仮想スレーブタブ画面（TermAnalysis.LxiEvent.dll 内蔵）</text>
+
+  <rect x="616" y="9" width="240" height="22" rx="11" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1" />
+  <text x="736" y="24" class="ui" font-size="10.2" font-weight="700" fill="#1D4ED8" text-anchor="middle">✓ TermAddIn_LxiEvent.License 共用</text>
+
+  <path d="M 28 66 L 28 44 Q 28 40 32 40 L 130 40 Q 134 40 134 44 L 134 66 Z" fill="#E2E8F0" stroke="#CBD5E1" stroke-width="1" />
+  <text x="81" y="57" class="ui" font-size="10.5" font-weight="600" fill="#475569" text-anchor="middle">接続・フレーミング</text>
+  <path d="M 138 66 L 138 44 Q 138 40 142 40 L 232 40 Q 236 40 236 44 L 236 66 Z" fill="#E2E8F0" stroke="#CBD5E1" stroke-width="1" />
+  <text x="187" y="57" class="ui" font-size="10.5" font-weight="600" fill="#475569" text-anchor="middle">自動応答ルール</text>
+  <path d="M 240 66 L 240 44 Q 240 40 244 40 L 302 40 Q 306 40 306 44 L 306 66 Z" fill="#E2E8F0" stroke="#CBD5E1" stroke-width="1" />
+  <text x="273" y="57" class="ui" font-size="10.2" font-weight="600" fill="#475569" text-anchor="middle">異常注入</text>
+  <path d="M 310 66 L 310 44 Q 310 40 314 40 L 366 40 Q 370 40 370 44 L 370 66 Z" fill="#E2E8F0" stroke="#CBD5E1" stroke-width="1" />
+  <text x="340" y="57" class="ui" font-size="10.2" font-weight="600" fill="#475569" text-anchor="middle">定周期</text>
+
+  <path d="M 374 67 L 374 39 Q 374 35 378 35 L 486 35 Q 490 35 490 39 L 490 67 Z" fill="#FFFFFF" stroke="#2563EB" stroke-width="1.8" />
+  <text x="432" y="56" class="ui" font-size="11.5" font-weight="700" fill="#1D4ED8" text-anchor="middle">LXI Event</text>
+  <text x="502" y="56" class="sub" font-size="9.8">※ ヘッダ「プロトコル: LXI Event」選択時のみ表示</text>
+
+  <g filter="url(#cardShadow)">
+    <rect x="24" y="66" width="832" height="420" rx="5" fill="#F8FAFC" stroke="#2563EB" stroke-width="1.5" />
+  </g>
+  <line x1="375" y1="66" x2="489" y2="66" stroke="#F8FAFC" stroke-width="2.5" />
+
+  <rect x="38" y="80" width="804" height="38" rx="5" fill="#EFF6FF" stroke="#93C5FD" stroke-width="1.2" />
+  <text x="54" y="104" class="ui" font-size="11.5" font-weight="700" fill="#1E3A8A">LXI Event Messaging 仮想ノード（UDP マルチキャスト 224.0.23.159:5044 ＆ 仮想 EventLog）</text>
+
+  <!-- ① マルチキャスト・ドメイン設定 -->
+  <rect x="38" y="128" width="804" height="114" class="grp" />
+  <text x="52" y="149" class="grp-hdr">① マルチキャスト参加・自動応答トリガ設定</text>
+
+  <text x="52" y="178" class="lbl">参加グループ:</text>
+  <rect x="142" y="161" width="160" height="24" class="inp" />
+  <text x="152" y="177" class="mono" font-size="11" fill="#0F172A">224.0.23.159:5044</text>
+
+  <text x="320" y="178" class="lbl">ドメイン:</text>
+  <rect x="380" y="161" width="58" height="24" class="inp" />
+  <text x="409" y="177" class="mono" font-size="11" font-weight="700" fill="#0F172A" text-anchor="middle">0</text>
+
+  <text x="456" y="178" class="lbl">トリガ受信 -&gt; 自動返送:</text>
+  <rect x="598" y="161" width="224" height="24" class="inp" />
+  <text x="608" y="177" class="mono" font-size="10.8" fill="#1D4ED8">LAN0 受信 -&gt; 100ms 後 LAN1 送出</text>
+
+  <rect x="52" y="200" width="14" height="14" rx="2" fill="#2563EB" />
+  <path d="M 55 207 L 58 210 L 63 203" stroke="#FFFFFF" stroke-width="1.8" fill="none" />
+  <text x="72" y="212" class="ui" font-size="10.8" fill="#1E293B">全送受信イベントを仮想 Event Log に蓄積し、簡易 HTTP (/lxi/eventlog) で XML 応答する</text>
+
+  <!-- ② 手動イベント送出・Event Log 確認 -->
+  <rect x="38" y="252" width="804" height="104" class="grp" />
+  <text x="52" y="273" class="grp-hdr">② 模擬イベント手動送出 ＆ 蓄積 Event Log プレビュー</text>
+
+  <text x="52" y="302" class="lbl">EventID:</text>
+  <rect x="114" y="285" width="120" height="24" class="inp" />
+  <text x="124" y="301" class="mono" font-size="11" fill="#0F172A">MEAS_DONE</text>
+  <text x="248" y="302" class="lbl">ペイロード:</text>
+  <rect x="322" y="285" width="220" height="24" class="inp" />
+  <text x="332" y="301" class="mono" font-size="11" fill="#0F172A">CH1=5.012V,OK</text>
+  <rect x="556" y="285" width="134" height="24" rx="4" fill="#1D4ED8" />
+  <text x="623" y="301" class="ui" font-size="10.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">模擬イベント即時送出</text>
+  <rect x="700" y="285" width="122" height="24" rx="4" fill="#FFFFFF" stroke="#94A3B8" stroke-width="1" />
+  <text x="761" y="301" class="ui" font-size="10.5" fill="#1E293B" text-anchor="middle">EventLog クリア</text>
+
+  <rect x="52" y="318" width="770" height="28" rx="3" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1" />
+  <text x="62" y="336" class="mono" font-size="10.2" fill="#334155">[Seq=0004] RX LAN0 (192.168.1.10)  -&gt;  [Seq=0005] TX LAN1 (+100ms, TS=1764148800.100000000)</text>
+
+  <!-- ③ パケット欠損・遅延異常模擬 -->
+  <rect x="38" y="366" width="804" height="106" rx="5" fill="#FFFBEB" stroke="#F59E0B" stroke-width="1.2" />
+  <text x="52" y="387" class="ui" font-size="11.5" font-weight="700" fill="#92400E">③ イベントパケット欠損・ドメイン不一致・異常模擬設定</text>
+
+  <text x="52" y="417" class="lbl">異常モード:</text>
+  <rect x="132" y="400" width="400" height="25" fill="#FFFFFF" stroke="#D97706" stroke-width="1.2" rx="3" />
+  <text x="142" y="417" class="ui" font-size="11" font-weight="700" fill="#0F172A">正常動作（指定 EventID を遅延なく送出） ▼</text>
+
+  <text x="548" y="417" class="lbl">発動条件:</text>
+  <rect x="612" y="400" width="212" height="25" class="inp" />
+  <text x="622" y="417" class="ui" font-size="10.8" fill="#334155">常時 / N回周期 / 確率指定 ▼</text>
+
+  <text x="52" y="447" class="sub">模擬可能異常: イベントドロップ（タイムアウト検証） / 重複シーケンス番号送出 / 不正マジックヘッダ送出</text>
+  <text x="52" y="463" class="mono" font-size="10" fill="#64748B">実装配置: Apr/Term/ExtAnalysis/TermAnalysis.LxiEvent/Simulation/LxiEventSlaveSimulator.cs</text>
+</svg>
